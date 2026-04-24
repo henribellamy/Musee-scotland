@@ -89,9 +89,7 @@ with left:
         est_pluvieux = st.toggle("Temps pluvieux")
 
 with right:
-    st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/National_Museum_of_Scotland_-_2.jpg/640px-National_Museum_of_Scotland_-_2.jpg",
-             caption="Musée National d'Écosse, Édimbourg", use_container_width=True)
-
+    st.image("musee.jpg", caption="Musée National d'Écosse, Édimbourg", use_container_width=True)
 st.divider()
 
 # --- Prédiction ---
