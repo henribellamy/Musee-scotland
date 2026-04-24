@@ -81,8 +81,8 @@ with left:
         jour = st.selectbox("Jour de la semaine",
             options=list(range(7)),
             format_func=lambda x: ["Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi","Dimanche"][x])
-        mois = st.slider("Mois", 1, 12, 7,
-            format=lambda x: ["Jan","Fév","Mar","Avr","Mai","Jun","Jul","Aoû","Sep","Oct","Nov","Déc"][x-1])
+        mois = st.slider("Mois", 1, 12, 7)
+        st.caption(f"Mois sélectionné : **{['Jan','Fév','Mar','Avr','Mai','Jun','Jul','Aoû','Sep','Oct','Nov','Déc'][mois-1]}**")
     with col2:
         temperature = st.slider("Température (°C)", 2, 22, 15)
         est_vacances = st.toggle("Période de vacances scolaires")
